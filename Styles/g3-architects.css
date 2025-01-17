@@ -109,27 +109,34 @@ color: #727272 ;
 }
 #quick-list{
     font-size:2.8rem;
-    font-weight: ;
+    
+}
+#Features{
+    font-size:2.8rem;
+    font-weight:bold;
+    color: #FF900E;
 }
 
 
 /* Features You will love */
 
 .features-you-love{
+    justify-content: center;
     margin-top: 130px;
     gap: 140px;
+    border: solid 1px tomato;
 }
 
-#Features{
-    font-size:2.8rem;
-    font-weight:bold;
-    color: #FF900E;
-}
+
 #feature-title{
     border-left:solid 5px#FF900E;
     padding-left:21px;
 }
-/* .content-box */
+.content-box{
+    max-width:586px;
+    border: solid 1px tomato;
+    justify-items: auto;
+}
 .features-card{
     margin-bottom:20px;
     padding: 30px 42px 30px 30px;
@@ -144,8 +151,27 @@ color: #727272 ;
     margin: 0;
 }
 #feature-img{
-    max-width: 708px;
+    width: 100%;
 }
+.feature-img-box{
+    border:solid 5px#FF900E;
+}
+/* Experience Badge Style */
+#experience-badge{
+    padding:45px;
+    margin-left: -92px;
+    margin-top: -120px;
+}
+#years{
+    font-size: 4rem;
+    font-weight: bold;
+    
+}
+#experience{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
 /* Some Facts Reated Style */
 .some-facts{
     margin-top: 130px;
@@ -174,7 +200,7 @@ color: #727272 ;
 
  .description-facts{
     max-width: 542px;
-    /* border: solid 1px #FF900E; */
+/* border: solid 1px #FF900E; */
 }
 
 .fact-card-number{
@@ -213,20 +239,23 @@ color: #727272 ;
 
 /* Footer Styles */
 footer div{
+    display: flex;
     max-width: 1440px;
-    height: 60px;
+    height: 100px;
     margin: 130px auto 250px auto;
     border-radius: 8px;
-    text-align: center;
-    /* align-items: center; */
-    /* justify-content: center; */
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+    
 }
 .display-none{
     display: none;
 }
 /* Media quary  */
 @media screen and (max-width:576px) {
-    .navbar, 
+    .navbar,
+    .features-you-love, 
     .nav-items{
         flex-direction: column;
     }
@@ -250,6 +279,13 @@ footer div{
         gap: 50px;
 
     }
+
+    #experience-badge{
+        padding:45px;
+        margin-left: 22px;
+        margin-top: 20px;
+    }
+
 }
 
 /* Medium Size device Responsive */
@@ -258,7 +294,9 @@ footer div{
         flex-direction: column-reverse;
         gap: 30px;
     }
-
+    .features-you-love{
+        flex-direction: column;
+    }
     .features-img-box{
         margin: auto;
     }
@@ -271,5 +309,10 @@ footer div{
         grid-template-columns: repeat(2, 1fr);
         gap: 50px;
 
+    }
+    #experience-badge{
+        padding:45px;
+        margin-left: 22px;
+        margin-top: 20px;
     }
 }
