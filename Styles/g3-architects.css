@@ -124,7 +124,7 @@ color: #727272 ;
     justify-content: center;
     margin-top: 130px;
     gap: 140px;
-    border: solid 1px tomato;
+    /* border: solid 1px tomato; */
 }
 
 
@@ -134,7 +134,7 @@ color: #727272 ;
 }
 .content-box{
     max-width:586px;
-    border: solid 1px tomato;
+    /* border: solid 1px tomato; */
     justify-items: auto;
 }
 .features-card{
@@ -154,7 +154,7 @@ color: #727272 ;
     width: 100%;
 }
 .feature-img-box{
-    border:solid 5px#FF900E;
+    /* border:solid 5px#FF900E; */
 }
 /* Experience Badge Style */
 #experience-badge{
@@ -281,9 +281,19 @@ footer div{
     }
 
     #experience-badge{
-        padding:45px;
+        padding:25px;
         margin-left: 22px;
         margin-top: 20px;
+    }
+    
+    #years{
+        font-size: 2rem;
+        font-weight: 800;
+        
+    }
+    #experience{
+        font-size: 1.25rem;
+        font-weight: 550;
     }
 
 }
