@@ -239,6 +239,7 @@ color: #727272 ;
 
 /* Footer Styles */
 footer div{
+    text-align: center;
     display: flex;
     max-width: 1440px;
     height: 100px;
@@ -294,6 +295,9 @@ footer div{
     #experience{
         font-size: 1.25rem;
         font-weight: 550;
+    }
+    .banner-title{
+        font-size: 2rem;
     }
 
 }
